@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         sass: {
             options: {
                 implementation: sass,
-                outputStyle: 'compressed',
+                style: 'compressed',
                 includePaths: [
                     'src/css',
                     'libs'
