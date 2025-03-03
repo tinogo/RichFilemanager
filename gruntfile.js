@@ -1,3 +1,5 @@
+const sass = require('sass-embedded');
+
 module.exports = function (grunt) {
     grunt.initConfig({
         copy: {
@@ -22,6 +24,7 @@ module.exports = function (grunt) {
         },
         sass: {
             options: {
+                implementation: sass,
                 outputStyle: 'compressed',
                 includePaths: [
                     'src/css',
